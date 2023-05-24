@@ -1,5 +1,7 @@
 # nukesd - Stable Diffusion Implementation in Nuke
 
+![cover](./icons/cover.gif)
+
 `nukesd` is a package that brings stable diffusion implementation to Nuke, enhancing your compositing and visual effects pipeline.
 
 ## Installation
