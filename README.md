@@ -15,15 +15,23 @@ First, ensure that Nuke has access to your gizmos path by appending the path whe
 After setting up the path, you need to add the following lines to your `main.py`:
 
 ```python
-import nukecngenerator
-import nukegenerator
+import cnnuke
+import sdnuke
 
-from nukecngenerator import *
-from nukegenerator import *
+from sdnuke import *
+from cnnuke import *
 
-m = toolbar.addMenu("SD", icon="sd.png")
-m.addCommand("nukeSD", "nukegenerator.create_sd_gizmo_instance()")
-m.addCommand("nukeCN", "nukecngenerator.create_cn_gizmo_instance()")
+m =toolbar.addMenu("SD", icon="sd.png")
+#
+m.addCommand("sd_CN", "cnnuke.create_cn_gizmo_instance()")
+m.addCommand("sd_text2img", "StableDiffusionGenerate()")
+m.addCommand("sd_text2imgSAG", "StableDiffusionSAGPipeline()")
+m.addCommand("sd_img2img", "StableDiffusionImg2Img()")
+m.addCommand("sd_inPaint", "StableDiffusionInpaintPipeline()")
+m.addCommand("sd_paintByExample", "StableDiffusionPaintByExample()")
+m.addCommand("sd_variation", "StableDiffusionImageVariationPipeline()")
+m.addCommand("sd_rePaint", "StableDiffusionRePaintPipelinePipeline()")
+m.addCommand("sd_upScale", "StableDiffusionUpscalePipeline()")
 ```
 This code will add a new menu ("SD") to your Nuke toolbar. The menu includes two commands:
 - "nukeSD" to create a new instance of the Stable Diffusion gizmo
