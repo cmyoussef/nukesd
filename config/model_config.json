@@ -1,0 +1,34 @@
+{
+  "controlNetModels": [
+    "lllyasviel/control_v11p_sd15_canny",
+    "lllyasviel/control_v11e_sd15_ip2p",
+    "lllyasviel/control_v11p_sd15_inpaint",
+    "lllyasviel/control_v11p_sd15_mlsd",
+    "lllyasviel/control_v11f1p_sd15_depth",
+    "lllyasviel/control_v11p_sd15_normalbae",
+    "lllyasviel/control_v11p_sd15_seg",
+    "lllyasviel/control_v11p_sd15_lineart",
+    "lllyasviel/control_v11p_sd15s2_lineart_anime",
+    "lllyasviel/control_v11p_sd15_openpose",
+    "lllyasviel/control_v11p_sd15_scribble",
+    "lllyasviel/control_v11p_sd15_softedge",
+    "lllyasviel/control_v11e_sd15_shuffle"
+  ],
+  "model_not_support_controlNet": [
+    "stabilityai/stable-diffusion-2-1"
+  ],
+  "controlNetCount": 3,
+  "models": [
+    "sinkinai/Perfect-World-v4",
+    "emilianJR/CyberRealistic_V3",
+    "runwayml/stable-diffusion-v1-5",
+    "stalkeryga/f222",
+    "dreamlike-art/dreamlike-photoreal-2.0",
+    "SG161222/Realistic_Vision_V2.0",
+    "prompthero/openjourney-v4",
+    "stabilityai/stable-diffusion-2-1",
+    "alkzar90/ppaine-landscape",
+    "ckpt/analog-madness-realistic-model",
+    "wdkwdkwdk/chinese_jewelry_fintune"
+  ]
+}
